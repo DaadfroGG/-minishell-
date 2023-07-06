@@ -10,7 +10,9 @@ DEP_EXT = .d
 
 
 SRCS = $(SRC_DIR)/main.c \
-		$(SRC_DIR)/signals.c
+		$(SRC_DIR)/signals.c \
+		$(SRC_DIR)/tokenizer.c \
+		$(SRC_DIR)/utils.c \
 
 OBJS = $(patsubst $(SRC_DIR)/%,$(OBJ_DIR)/%,$(SRCS:$(SRC_EXT)=$(OBJ_EXT)))
 

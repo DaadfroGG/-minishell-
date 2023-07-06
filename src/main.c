@@ -4,15 +4,6 @@
 
 #include "minishell.h"
 
-int ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 int	get_input(t_data *data)
 {
@@ -24,6 +15,8 @@ int	get_input(t_data *data)
 		return (free(data->user_input), 2);
 	return (0);
 }
+
+
 
 int	shell_routine(int ac, char **av, char **env, t_data *data)
 {
